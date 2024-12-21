@@ -1,0 +1,223 @@
+[
+  {
+    "id": "1",
+    "name": "Chulalongkorn University's Global Research Collaborations",
+    "description": "A data analytics platform designed to visualize Chulalongkorn University's global research collaborations using geospatial clustering and interactive tools.",
+    "short": "DSDE final project focused on geospatial analytics.",
+    "timeline": "December 2024",
+    "role": "Data Engineer",
+    "explain": "I developed a data analytics platform utilizing PySpark and Streamlit to implement geospatial clustering and interactive visualizations. Additionally, I automated data scraping processes using Selenium to gather essential information for the platform.",
+    "techStack": {
+      "technologies": [
+        { "icon": "/images/icons/python.png", "title": "Python" }
+      ],
+      "technicalDetails": [
+        {
+          "icon": "/images/icons/hgfs.png",
+          "title": "Hosting",
+          "description": "Hugging Face Space"
+        },
+        {
+          "icon": "/images/icons/streamlit.png",
+          "title": "Frontend Framework",
+          "description": "Streamlit"
+        },
+        {
+          "icon": "/images/icons/selenium.png",
+          "title": "Web Scraping",
+          "description": "Selenium"
+        },
+        {
+          "icon": "/images/icons/sklearn.png",
+          "title": "Machine Learning",
+          "description": "scikit-learn"
+        },
+        {
+          "icon": "/images/icons/matplotlib.png",
+          "title": "Data Visualization",
+          "description": "Matplotlib"
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Geospatial Clustering",
+        "description": "Visualizes Chulalongkorn University's global research collaborations using clustering techniques.",
+        "tag": "Core",
+        "status": "completed"
+      },
+      {
+        "title": "Interactive Visualizations",
+        "description": "Provides dynamic and intuitive data visualizations for better insights.",
+        "tag": "Discovery",
+        "status": "completed"
+      }
+    ],
+    "galleryImages": ["/images/dsde1.png", "/images/dsde2.png"],
+    "demo": [
+      "https://kongfha-cu-global-research-collaboration-explorer.hf.space/"
+    ],
+    "code": [
+      "https://drive.google.com/drive/folders/1qW9WSk711Sl9RO0d6mngpOUz4Ur-4uCb"
+    ],
+    "img" : "/images/project1.png"
+  },
+  {
+    "id": "2",
+    "name": "FishTank IoT",
+    "description": "A real-time IoT solution for monitoring and managing fish tanks, ensuring optimal conditions and eco-friendly practices.",
+    "short": "An embedded system project focused on real-time fish tank monitoring and management.",
+    "timeline": "December 2024",
+    "role": "Developer",
+    "explain": "I developed the FishTank IoT device by ensuring sensor functionality, integrating them with ESP32, establishing a connection to the real-time Firebase database, and implementing email automation through App Script. Additionally, I contributed to the overall design and functionality of the device, creating a seamless solution for real-time monitoring and management. Furthermore, I implemented motion detection using the YOLOv11 model to detect fish movement, providing an automatic status update on the fish's condition (alive or dead). This feature added advanced functionality to ensure better fish tank management.",
+    "techStack": {
+      "technologies": [
+        { "icon": "/images/icons/C.png", "title": "C" },
+        { "icon": "/images/icons/python.png", "title": "Python" }
+      ],
+      "technicalDetails": [
+        {
+          "icon": "/images/icons/firebase.png",
+          "title": "Database",
+          "description": "Firebase"
+        },
+        {
+          "icon": "/images/icons/appscript.png",
+          "title": "Email Automation",
+          "description": "App Script"
+        },
+        {
+          "icon": "/images/icons/esp32.jpg",
+          "title": "Device",
+          "description": "ESP32"
+        },
+        {
+          "icon": "/images/icons/yolo.png",
+          "title": "Motion Detection",
+          "description": "YOLOv11 Model"
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Real-Time Monitoring",
+        "description": "Tracks water quality parameters such as temperature and pH in real-time.",
+        "tag": "Core",
+        "status": "completed"
+      },
+      {
+        "title": "Automated Notifications",
+        "description": "Sends alerts via email using Apps Script when conditions deviate from optimal levels.",
+        "tag": "Notification",
+        "status": "completed"
+      },
+      {
+        "title": "Fish Movement Detection",
+        "description": "Detects fish movement using the YOLOv11 model and provides an automatic status update to indicate whether the fish are alive or dead.",
+        "tag": "Advanced",
+        "status": "completed"
+      }
+    ],
+    "galleryImages": [
+      "/images/iot1.png",
+      "/images/iot2.jpg"
+    ],
+    "demo": ["https://www.youtube.com/watch?v=LXepcVw3Fxo"],
+    "code": ["https://github.com/tangtnp/Embedded-Final-Project"],
+    "img" : "/images/iotproject.png"
+  }
+  ,
+  {
+    "id": "3",
+    "name": "BiteBuddy",
+    "description": "BiteBuddy is a restaurant reservation website designed to simplify the process of booking tables at your favorite restaurants. The website allows users to browse restaurants, view availability, and make reservations seamlessly.",
+    "short": "A restaurant reservation website developed as the final project for Software Engineering.",
+    "timeline": "May 2024",
+    "role": "Backend Developer",
+    "explain": "I primarily worked on the backend development of the project, implementing core functionalities such as managing user data, handling reservations, and integrating MongoDB for database management.",
+    "techStack": {
+      "technologies": [
+        { "icon": "/images/icons/html5.png", "title": "HTML5" },
+        { "icon": "/images/icons/css3.png", "title": "CSS3" },
+        { "icon": "/images/icons/javascript.png", "title": "JavaScript" },
+        { "icon": "/images/icons/typescript.png", "title": "TypeScript" }
+      ],
+      "technicalDetails": [
+        {
+          "icon": "/images/icons/mongodb.png",
+          "title": "Database",
+          "description": "MongoDB"
+        },
+        {
+          "icon": "/images/icons/vercel.png",
+          "title": "Hosting",
+          "description": "Vercel"
+        },
+        {
+          "icon": "/images/icons/nextjs.png",
+          "title": "Frontend Framework",
+          "description": "Next.js"
+        },
+        {
+          "icon": "/images/icons/express.jpg",
+          "title": "Backend Framework",
+          "description": "Express"
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Core Functionality",
+        "description": "Users can browse restaurants, check table availability, and make reservations directly through the platform.",
+        "tag": "Core",
+        "status": "completed"
+      },
+      {
+        "title": "User Discovery",
+        "description": "Provides a seamless interface for users to explore restaurants based on their preferences and location.",
+        "tag": "Discovery",
+        "status": "completed"
+      }
+    ],
+    "galleryImages": ["/images/bitebuddy.png", "/images/bitebuddy2.png"],
+    "demo": ["None"],
+    "code": [
+      "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwi-uM3K27OKAxWRSmwGHbvwDJ4QPAgI"
+    ],
+    "img" : "/images/bitebuddyproject.png"
+  },
+  {
+    "id": "4",
+    "name": "Game Project",
+    "description": "A 2D RPG game built using Java and JavaFX, designed to deliver a classic gaming experience. The project features engaging gameplay mechanics, interactive quests, and a visually appealing interface, all crafted to showcase creativity and programming expertise as part of the Programming Methodology final project.",
+    "short": "Classic gaming with JavaFX for Programming Methodology final project",
+    "timeline": "May 2024",
+    "role": "Game Developer",
+    "explain": "I was responsible for designing the game's logic, including character interactions, game mechanics, and quest systems, using Java. Additionally, I created a user-friendly interface with JavaFX, ensuring smooth navigation and an engaging player experience through well-structured layouts and intuitive controls.",
+    "techStack": {
+      "technologies": [
+        { "icon": "/images/icons/java.png", "title": "Java" },
+        { "icon": "/images/icons/javafx.png", "title": "JavaFX" }
+      ],
+      "technicalDetails": []
+    },
+    "features": [
+      {
+        "title": "2D RPG gameplay",
+        "description": "Immerse players in a classic role-playing game experience with engaging quests, character progression, and interactive environments in a 2D world.",
+        "tag": "Core",
+        "status": "completed"
+      },
+      {
+        "title": "Graphical User Interface",
+        "description": "Provide an intuitive and visually appealing interface that enhances user interaction and ensures smooth navigation throughout the game.",
+        "tag": "User Experience",
+        "status": "completed"
+      }
+    ],
+    "galleryImages": ["/images/game1.png", "/images/game2.png", "/images/game3.png"],
+    "demo": ["None"],
+    "code": ["https://github.com/aiyapatv/ProgMeth"],
+    "img" : "/images/gameproject.png"
+  }
+]

@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* globals.css */
+
+/* Import CSS Variables */
+@import './variables.css';
+
+/* Your existing global styles */
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.project-card {
+  @apply bg-gradient-to-br from-gray-800 to-gray-700; /* Gradient background */
+  @apply rounded-lg shadow-md p-4; /* Rounded corners and padding */
+  @apply flex flex-col items-start justify-between; /* Layout inside the block */
+  @apply transition-transform duration-300 hover:scale-105 hover:shadow-lg; /* Hover effects */
+  flex: 1 1 22%; /* All blocks have the same size (22% width) */
+  max-width: 300px; /* Optional max width */
+  min-height: 350px; /* Ensures equal height */
+}
+
+.project-card img {
+  @apply w-full h-40 object-cover rounded-t-lg; /* Uniform image size */
+}
+
+.project-title {
+  @apply text-lg font-bold text-gray-100 mt-4; /* Title styling */
+}
+
+.project-description {
+  @apply text-sm text-gray-400 mt-2; /* Muted description text */
+  flex-grow: 0; /* Prevents it from stretching */
+  align-self: flex-start; /* Aligns the description to the top */
+}
+
+.project-tags {
+  @apply flex flex-wrap mt-4 gap-2; /* Tags layout */
+}
+
+.project-tag {
+  @apply bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full; /* Styled tags */
+}
+
+.project-actions {
+  @apply flex items-center gap-4 mt-4; /* Action buttons layout */
+}
+
+.project-action {
+  @apply bg-gray-700 text-white text-sm font-bold px-3 py-2 rounded-full; /* Styled action buttons */
+  @apply hover:bg-gray-600; /* Hover effect */
+}
+@keyframes popIn {
+  0% {
+    transform: translateY(20px); /* Moves up */
+    opacity: 0; /* Starts invisible */
+  }
+  100% {
+    transform: translateY(0); /* Ends in its original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.animation-pop-in {
+  animation: popIn 0.5s ease-out forwards; /* Adjusted to go up smoothly */
+}
+/* General Responsive Styles */
+/* Timeline styles */
+/* Timeline General Layout */
+.career-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.career-timeline .vertical-line {
+  position: absolute;
+  width: 2px;
+  background-color: #4b5563;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.career-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.career-timeline .vertical-line {
+  position: absolute;
+  width: 2px;
+  background-color: #4b5563; /* Tailwind's gray-600 */
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+  max-width: 90%;
+}
+
+.timeline-item:nth-child(odd) .card {
+  margin-right: auto; /* Align left */
+  text-align: left; /* Align text to the left */
+}
+
+.timeline-item:nth-child(even) .card {
+  margin-left: auto; /* Align right */
+  text-align: right; /* Align text to the right */
+}
+
+.timeline-item .year {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #9ca3af; /* Tailwind's gray-400 */
+}
+
+.timeline-item:nth-child(odd) .year {
+  left: -4rem; /* Position year on the left */
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .year {
+  right: -4rem; /* Position year on the right */
+  text-align: left;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom right, #1f2937, #111827); /* Tailwind's gray-800 to gray-900 */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: 45%;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.timeline-item .card-content {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .career-timeline .vertical-line {
+    display: none;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item .year {
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .timeline-item .card {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .timeline-item .card img {
+    margin: 0 auto 1rem auto;
+  }
+}

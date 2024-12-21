@@ -1,0 +1,18 @@
+/* variables.css */
+
+:root {
+    /* Background Colors */
+    --color-background: #153448; /* Darkest color for background */
+  
+    /* Primary Colors */
+    --color-blue: #3C5B6F; /* Medium color for boxes */
+    --color-brown: #948979; /* Secondary medium color for alternative boxes */
+  
+    /* Text Colors */
+    --color-text: #DFD0B8; /* Lightest color for text */
+    --color-white: #ffffff; /* White for text or backgrounds */
+  
+    /* Hover Colors */
+    --color-hover-brown: #6b7280; /* Hover color */
+  }
+  
